@@ -4,13 +4,13 @@ import { motion as m } from "framer-motion";
 
 function Home() {
   return (
-    <>
+    <div className="bg-orange-200 min-h-screen">
       <m.section
         initial={{ y: "100%" }}
         animate={{ y: "0%" }}
         transition={{ duration: 0.75, ease: "easeOut" }}
         exit={{ opacity: 1 }}
-        className="text-gray-900 absolute top-0 left-0 w-full bg-orange-200 lg:px-48 px-16 min-h-fit"
+        className="text-gray-900 absolute top-0 left-0 w-full bg-orange-200 lg:px-48 px-16"
       >
         <div className="my-60 p-1 overflow-hidden">
           <m.h1
@@ -35,7 +35,7 @@ function Home() {
           </div>
         </div>
       </m.section>
-    </>
+    </div>
   );
 }
 
